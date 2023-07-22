@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Catalogue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="left">
+            <span class="menu-icon">&#9776;</span>
+            <a href="#"><img src="Cookpal 1.png" alt=""></a> 
+        </div>
+        <div class="right" id="navbarLinks">
+            <ul>
+                <li class="home"><a href="#">Home</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Login / Sign Up</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="Banner.png" alt="banner">
+    </div>
+
+    <div class="container">
+        <input type="text" id="searchInput" placeholder="Search recipes...">
+        <div class="filter">
+            <button id="showAll">Show All</button>
+            <button id="showVeg">Show Only Veg</button>
+            <button id="showNonVeg">Show Only Non-Veg</button>
+        </div>
+        <div class="main-container">
+            <div class="rating-filter">
+                <h2>Filter</h2>
+                <h3>Ratings</h3>
+                <div class="checkbox-item">
+                    <input type="checkbox" name="ratingFilter" id="above45" value="above45">
+                    <label for="above45">Rating Above 4.5</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" name="ratingFilter" id="below40" value="below40">
+                    <label for="below40">Rating Below 4.0</label>
+                </div>
+            </div>
+            <div class="recipes" id="recipeContainer">
+                <!-- Recipe cards will be dynamically added here -->
+                <img src="https://source.unsplash.com/random?food" alt="Recipe Image">
+                <p>Type: Veg</p>
+                <div class="name-rating">
+                    <h2>Recipe Name</h2>
+                    <p>Rating: 4.5</p>
+                </div>
+                <p>Time: 30 min</p>
+                <button>Like</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="section">
+            <h3>About Us</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla odio non augue vestibulum, eget dapibus lorem mollis.</p>
+        </div>
+        <div class="section">
+            <h3>Company Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="section">
+            <h3>Resources</h3>
+            <ul>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Tutorials</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        <div class="section">
+            <h3>Contact Us</h3>
+            <form action="#">
+                <input type="email" placeholder="Your Email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
